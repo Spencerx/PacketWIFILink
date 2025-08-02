@@ -14,7 +14,7 @@ RUN dnf -y install --enablerepo=devel git wget \
     python3-twisted python3-pyroute2 \
     python3-devel \
     python3-pyserial python3-setuptools python3-msgpack python3-jinja2 python3-yaml \
-    gstreamer1-rtsp-server-devel gstreamer1-devel procps net-tools iproute iputils
+    gstreamer1-rtsp-server-devel gstreamer1-devel procps net-tools iproute iputils libcatch2-devel
 
 RUN ln -sf /usr/bin/trial /usr/bin/trial3
 RUN echo "%debug_package %{nil}" > ~/.rpmmacros
